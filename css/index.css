@@ -1,0 +1,38 @@
+body
+{
+  background-color:#cfe2fc
+}
+.top
+{
+  width:30%;
+  margin-top:8%;
+  border-radius:50px
+}
+.sign
+{
+  text-shadow: 3px 3px 3px #cfe2fc;
+}
+.avatar-icon
+{
+  font-size:100px;
+}
+.input1
+{
+  border-radius:20px;
+  width:75%;
+  margin: auto;
+  display:inline;
+}
+.btn
+{
+  background-color:#cfe2fc;
+}
+a:link
+{
+  color:black;
+  text-decoration:none;
+}
+a:hover
+{
+  color:#cfe2fc;
+}

@@ -1,0 +1,86 @@
+*
+{
+    overflow:hidden;
+}
+/* About Navbar*/
+.navbar
+{
+    background-color:black;
+}
+li a
+{
+    color:white;
+}
+li a:hover
+{
+  color:#b91427;
+}
+.nav > li > a.active:after,
+.nav > li > a:after
+{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color:#b91427;
+    transition: width 0.5s;v
+}
+.nav > li > a.active:after
+{
+
+    width: 100%;
+
+}
+.nav > li > a:after
+{
+
+    width: 0;
+}
+.nav > li > a:hover:after
+{
+    width: 100%;
+}
+.top-avatar
+{
+  font-size:30px;
+}
+/* Home */
+.cover
+{
+  background-image:url("/image/Home.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin-bottom:0;
+}
+.backGround
+{
+    background-color:#b91427;
+}
+.butn:hover
+{
+    background-color:#b91427;
+}
+/* About */
+.About
+{
+    padding:auto;
+    margin:auto;
+}
+.about1
+{
+    width:35%;
+    background-image:url("/image/about1.jpg");
+    
+}
+.about2
+{
+    background-image:url("/image/about2.gif");
+}
+.search-icon
+{
+    font-size:30px;
+}
+/* Character */ 
+.Character
+{
+    background-color:darkred;
+}
