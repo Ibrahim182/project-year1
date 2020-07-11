@@ -17,7 +17,6 @@
     <script src="js/index.js"></script>
   </head>
   <body>
-      
       <!-- Navbar -->
       <div class="jumbotron-fluid top-icon">
           <nav class="navbar navbar-expand-sm fixed-top">
@@ -29,18 +28,26 @@
                   <ul class="navbar-nav top-icon nav">
                       <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                       <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-                      <li class="nav-item"><a href="#story" class="nav-link">Character</a></li>
-                      <li class="nav-item"><a href="" class="nav-link">Top Character In 2020</a></li>
+                      <li class="nav-item"><a href="#Character" class="nav-link">Character</a></li>
+                      <li class="nav-item"><a href="#Influential" class="nav-link">Influential People to Watch in 2020</a></li>
                       <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                   </ul>
                   <ul class="navbar-nav ml-auto nav-link">
-                      <a href=""><i class="fas fa-user-circle top-avatar text-danger"></i></a>
+                      <div class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown">
+                              <i class="fas fa-user-circle top-avatar text-danger"></i>
+                          </a>
+                          <div class="dropdown-menu">
+                              <a class="dropdown-item" href="index.html">Log out</a>
+                              <a class="dropdown-item" href="#">Feedback</a>
+                          </div>
+                      </div>
                   </ul>
               </div>
           </nav>
       </div>
       <!-- Home -->
-      <div class="jumbotron text-center text-white cover">
+      <div class="jumbotron jumbotron-fluid text-center text-white cover" id="home">
           <h1 class="pt-5">Welcome To Our Website</h1>
           <h3 class="pt-5">Here We Will Show You The Most Famous Character</h3>
           <h3 class="pt-3">In The World</h3>
@@ -48,18 +55,18 @@
           <button class="btn ml-5 mt-5 butn">Learn More !</button>
       </div>
       <!-- About -->
-      <div class="jumbotron jumbotron-fluid bg-white About">
+      <div class="jumbotron bg-white About" id="about">
           <h1 class="text-center text-danger">About us</h1>
           <div class="row">
               <div class="col-md-3">
                   
               </div>
-              <div class="col-md-3 text-white about1 mr-5 mt-5">
-                  <i class="fab fa-searchengin search-icon"> Search</i>
+              <div class="col-md-3 col-3 text-white about1 mr-5 mt-5">
+                  <i class="fab fa-searchengin search-icon pt-2"> Search</i>
                   <p class="pt-3">We Help People To Find The Most Famous and Succesful Character In The World To Know How The Become Like That</p>
               </div>
-              <div class="col-md-3 text-danger about2 ml-5 mt-5">
-                  <i class="fas fa-hands-helping search-icon"> Help us</i>
+              <div class="col-md-3 col-3 text-danger about2 ml-5 mt-5">
+                  <i class="fas fa-hands-helping search-icon pt-2"> Help us</i>
                   <p class="pt-3">If You Wanna Help Us You Click Here</p>
                   <button class="btn btn-danger">Click</button>
               </div>
@@ -69,88 +76,383 @@
           </div>
       </div>
       <!-- Character -->
-      <div class="jumbotron jumbotron-fluid Character">
+      <div class="jumbotron jumbotron-fluid Character" id="Character">
           <div class="container">
               <h1 class="text-center text-white">Character</h1>
               <div class="card-columns">
                   <div class="card bg-primary">
-                      <img class="card-img-buttom" src="/image/Footballer.jpg" alt="Card image" style="width:100%">
+                          <img class="card-img-buttom" src="image/Footballer.jpg" alt="Card image" style="width:100%">
                       <div class="card-body text-center">
                           <h3>Footballer</h3>
                           <p class="card-text">Here We Will Show You The Most Famous Footballer In The World</p>
                       </div>
                   </div>
                   <div class="card bg-warning">
-                      <img class="card-img-buttom" src="/image/scientists.jpg" alt="Card image" style="width:100%">
+                      <img class="card-img-buttom" src="image/scientists.png" alt="Card image" style="width:100%">
                       <div class="card-body text-center">
                           <h3>scientists</h3>
                           <p class="card-text">Here We Will Show You The Most Famous Scientists In The World</p>
                       </div>
                   </div>
                   <div class="card bg-success">
-                      <img class="card-img-buttom" src="/image/Actors.png" alt="Card image" style="width:100%">
+                      <img class="card-img-buttom" src="image/Actors.png" alt="Card image" style="width:100%">
                       <div class="card-body text-center">
                           <h3>Actors</h3>
                           <p class="card-text">Here We Will Show You The Most Famous Actors In The World</p>
                       </div>
                   </div>
                   <div class="card bg-danger">
-                      <img class="card-img-buttom" src="/image/music.jpg" alt="Card image" style="width:100%">
+                      <img class="card-img-buttom" src="image/music.jpg" alt="Card image" style="width:100%">
                       <div class="card-body text-center">
-                          <h>Singers</h>
+                          <h3>Singers</h3>
                           <p class="card-text">Here We Will Show You The Most Famous Singers In The World</p>
                       </div>
                   </div>  
-                  <div class="card bg-light">
-                      <img class="card-img-buttom" src="/image/president.jpg" alt="Card image" style="width:100%">
+                  <!-- Icon between character -->
+                  <div class="card bg-white">
                       <div class="card-body text-center">
-                          <h>President</h>
-                          <p class="card-text">Here We Will Show You The Most Famous president In The World</p>
+                          
                       </div>
                   </div>
                   <div class="card bg-info">
-                      <img class="card-img-buttom" src="/image/programmer.jpg" alt="Card image" style="width:100%">
+                      <img class="card-img-buttom" src="image/programmeer.png" alt="Card image" style="width:100%">
                       <div class="card-body text-center">
-                          <h>Programmers</h>
+                          <h3>Programmers</h3>
                         <p class="card-text">Here We Will Show You The Most Famous Programmers In The World</p>
                       </div>
                  </div>
+                  <div class="card bg-light">
+                      <a href="President.html"><img class="card-img-buttom" src="image/president.jpg" alt="Card image" style="width:100%"></a>
+                      <div class="card-body text-center">
+                          <h3>President</h3>
+                          <p class="card-text">Here We Will Show You The Most Famous president In The World</p>
+                      </div>
+                  </div>
+                  
             </div>
           </div>
       </div>
-      <!-- Top Character In 2020 -->
-      <div class="jumbotron jumbotron-fluid">
-          <div class="containar">
-              <div class="card">
-                  <a data-toggle="Mark" data-target="#markd"><image class="card-img-buttom" src="/image/Mark.jpg" alt="Card image" style="width:100%"></image></a>
-                  <div class="card-body text-center">
-                      <p> <code>Role : </code> Founder of Facebook </p>
+      <!-- Influential People to Watch in 2020 -->
+      <h1 class="text-center">Influential People to Watch in 2020</h1>
+      <div class="container" id="Influential">
+          <div class="row pt-3">
+              <div class="col-md-3">
+                  <div class="card">
+                      <image class="card-img-buttom" src="image/Mark.png" alt="Card image" style="width:100%"></image>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#markd">
+                          Open Details
+                      </button>
+                      <div class="card-body text-center details">
+                          <p> <code>Name : </code>Mark Zuckerberg</p>
+                          <p> <code>Role : </code> Founder of Facebook </p>
+                      </div>
+                  </div>
+                  <!-- modal -->
+                  <div class="modal fade" id="markd">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+
+                        <!-- Name -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Mark Zuckerberg</h4>
+                        </div>
+
+                        <!--  details -->
+                        <div class="modal-body">
+                          <p>With a personal worth of about $73 billion, the founder of Facebook continues to deal with critics who are chiding the social media platform for disseminating fake news in 2019. The Federal Trade Commission fined Facebook an agency record penalty of $5 billion for violating customers' privacy in July.
+                          Conservatives claim the social network is biased and have said Facebook's audit that sought to address those accusations was a whitewash. For their part, liberals have said the audit legitimized conservative claims of bias. With the 2020 presidential election less than a year away, Facebook will be under the microscope for its news dissemination from all sides of the political spectrum.</p>
+                        </div>
+
+                        <!-- close buttom -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
                   </div>
               </div>
-          <!-- modal -->
-          <div class="modal fade" id="markd">
-            <div class="modal-dialog modal-xl">
-              <div class="modal-content">
+              <div class="col-md-3">
+                  <div class="card">
+                      <image class="card-img-buttom" src="image/Pope%20Francis.jpg" alt="Card image" style="width:100%"></image>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Pope">
+                          Open Details
+                      </button>
+                      <div class="card-body text-center details">
+                          <p> <code>Name : </code>Pope Francis</p>
+                          <p> <code>Role : </code> Leader of Catholic Church </p>
+                      </div>
+                  </div>
+                  <!-- modal -->
+                  <div class="modal fade" id="Pope">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
 
-                <!-- Name -->
-                <div class="modal-header">
-                  <h4 class="modal-title">Mark Zuckerberg</h4>
-                </div>
+                        <!-- Name -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Pope Francis</h4>
+                        </div>
 
-                <!--  details -->
-                <div class="modal-body">
-                  <p></p>
-                </div>
+                        <!--  details -->
+                        <div class="modal-body">
+                            <p>Pope Francis, the leader of the Catholic Church, which has over 1 billion followers, continues to face the church's ongoing controversy surrounding sexual abuse of minors by Catholic clerics, a problem that threatens the future legitimacy of the 2,000-year-old church. In February, the pontiff called a meeting of church leadership for a meeting about the issue. Francis has spoken out about getting to the root of the problem and the abuse of power.    
+                            The pope is busy shaping the papacy in his image by engaging in dialogue on issues such as migration, climate change, and the inclusion of gay Catholics, and is striving to bring lapsed Catholics back to the church. He's extending his legacy by naming cardinals -- today, more than half of the College of Cardinals have been appointed by Francis.</p>
+                        </div>
 
-                <!-- close buttom -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="Mark">Close</button>
-                </div>
+                        <!-- close buttom -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        </div>
 
+                      </div>
+                    </div>
+                  </div>
               </div>
-            </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <image class="card-img-buttom" src="image/Narendra.png" alt="Card image" style="width:100%"></image>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Narendra">
+                          Open Details
+                      </button>
+                      <div class="card-body text-center details">
+                          <p> <code>Name : </code>Narendra Modi</p>
+                          <p> <code>Role : </code> Prime minister of India </p>
+                      </div>
+                  </div>
+                  <!-- modal -->
+                  <div class="modal fade" id="Narendra">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+
+                        <!-- Name -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Narendra Modi</h4>
+                        </div>
+
+                        <!--  details -->
+                        <div class="modal-body">
+                            <p>Narendra Modi was first elected prime minister of India, the world's largest democracy, in 2014 on a platform of improving the nation's transportation infrastructure and opening up the country to direct foreign investment.
+                            Modi has championed Hindu culture, which some criticized as exclusionary toward Muslims, especially in the province of Kashmir, which has a Muslim majority. In early December, Indian lawmakers passed a change to the nation's citizenship law to include religion as a criterion for nationality to make it easier for refugees of certain faiths from neighboring countries who are being persecuted to gain citizenship. The measure is seen by many as divisive because is does not include Muslims. India is home to 200 million Muslims.
+
+                            India has also been chided for its poor treatment of women and been tainted by recent stories about women who have been gang-raped and murdered. Modi has spoken about the mistreatment of women, but critics have said the country has not acted strongly enough to stop the violence</p>
+                        </div>
+
+                        <!-- close buttom -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <image class="card-img-buttom" src="image/Cristiano.png" alt="Card image" style="width:100%"></image>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Cristiano">
+                          Open Details
+                      </button>
+                      <div class="card-body text-center">
+                          <p> <code>Name : </code>Cristiano Ronaldo</p>
+                          <p> <code>Role : </code> Soccer player </p><br>
+                      </div>
+                  </div>
+                  <!-- modal -->
+                  <div class="modal fade" id="Cristiano">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+
+                        <!-- Name -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Cristiano Ronaldo</h4>
+                        </div>
+
+                        <!--  details -->
+                        <div class="modal-body">
+                            <p>Cristiano Ronaldo is one of the greatest soccer players of all time. In 2018, the Portuguese soccer star became the first player to win the UEFA Champions League five times. He's also played on Portugal's World Cup team four times and scored seven goals in the four tournaments. Ronaldo joined Italian soccer club Juventus in 2018 in a deal that will pay him $64 million a year over four years. After the deal was announced, Juventus sold 520,000 Juventus jerseys with his name on them in 24 hours.
+                            Ronaldo's Wikipedia page received more than 11 million views over the last 12 months. The 34-year-old's acclaim extends to social media, where he has nearly 400 million followers.
+                            Ronaldo has also lent his stature to the campaign to combat racism in soccer, titled Stand Up Speak Up, that was launched following a spate of racist incidents at soccer matches across Europe. Last year, Ronaldo went on Instagram to speak in defense of Kalidou Koulibaly after racist chants were aimed at the Napoli defender during a match at Inter Milan.</p>
+                        </div>
+
+                        <!-- close buttom -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
           </div>
+          <div class="row pt-2">
+              <div class="col-md-3">
+                  <div class="card">
+                      <image class="card-img-buttom" src="image/Nancy.png" alt="Card image" style="width:100%"></image>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Nancy">
+                          Open Details
+                      </button>
+                      <div class="card-body text-center">
+                          <p> <code>Name : </code>Nancy Pelosi</p>
+                          <p> <code>Role : </code> Speaker of the House of Representatives </p>
+                      </div>
+                  </div>
+                  <!-- modal -->
+                  <div class="modal fade" id="Nancy">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+
+                        <!-- Name -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Nancy Pelosi</h4>
+                        </div>
+
+                        <!--  details -->
+                        <div class="modal-body">
+                            <p>Rep. Nancy Pelosi is the first woman to have served as Speaker of the House of Representatives. She helmed the effort to impeach President Donald Trump. To do this, Pelosi had to rely on her leadership and political skills to pull together the disparate parts of the Democratic Party to advance the process, while at the same time attempting to convince members of the opposition Republican Party of the misdeeds of President Trump.
+                            In a demonstration of bipartisanship, Pelosi and the House of Representatives supported a trade deal with Mexico and Canada that was backed by the president.</p>
+                        </div>
+
+                        <!-- close buttom -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <image class="card-img-buttom" src="image/Mary.png" alt="Card image" style="width:100%"></image>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Mary">
+                          Open Details
+                      </button>
+                      <div class="card-body text-center">
+                          <p> <code>Name : </code>Mary Barra</p>
+                          <p> <code>Role : </code> CEO of General Motors </p>
+                      </div>
+                  </div>
+                  <!-- modal -->
+                  <div class="modal fade" id="Mary">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+
+                        <!-- Name -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Mary Barra</h4>
+                        </div>
+
+                        <!--  details -->
+                        <div class="modal-body">
+                            
+                            <p>Mary Barra has overseen a sea change at General Motors, once the largest automobile company in the world. Since taking over as the first female chief executive officer of an American automobile company in 2014, Barra's strategy for GM has been to pull from several underperforming international markets and push into the electric car market. She told an auto industry conference in New York in November that GM is planning to sell 20 electric vehicle models by 2023. As the 13th largest-revenue U.S. corporation in the world, GM will likely continue to wield tremendous influence.
+                            Barra will also continue in 2020 to influence her 173,000 employees and their families, as well as play a major role in national conversations on labor relations. In October 2019, Barra finalized a labor contract with the United Automobile Workers union, ending the 40-day, 46,000 GM worker strike -- the longest strike against the company in a half century.</p>
+                        </div>
+
+                        <!-- close buttom -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <image class="card-img-buttom" src="image/Billie.png" alt="Card image" style="width:100%"></image>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Billie">
+                          Open Details
+                      </button>
+                      <div class="card-body text-center">
+                          <p> <code>Name : </code>Billie Eilish</p>
+                          <p> <code>Role : </code> Singer </p><br>
+                      </div>
+                  </div>
+                  <!-- modal -->
+                  <div class="modal fade" id="Billie">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+
+                        <!-- Name -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Billie Eilish</h4>
+                        </div>
+
+                        <!--  details -->
+                        <div class="modal-body">
+                            <p>Eilish has been called the voice of Generation Z, those born in the mid-to-late 1990s, embodying teen angst and apathy. The Grammy Award-nominated singer-songwriter, who turns 18 in late December, was named Billboard 2019 Woman of the Year earlier this month. Eilish has already posted two top 10 hits on the Billboard Hot 100, including the chart-topper "Bad Guy." Her debut album, "When We All Fall Asleep, Where Do We Go?," went to No. 1 on the Billboard 200.
+                            Eilish is generating a lot of interest on Wikipedia, and her site has had almost 20 million page views over the last 12 months. She has 44.9 million followers on Instagram, and Lana Del Rey and Dave Grohl are fans.</p>
+                        </div>
+
+                        <!-- close buttom -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <image class="card-img-buttom" src="image/Roger.png" alt="Card image" style="width:100%"></image>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Roger">
+                          Open Details
+                      </button>
+                      <div class="card-body text-center">
+                          <p> <code>Name : </code>Roger Goodell</p>
+                          <p> <code>Role : </code> Commissioner of the National Football League </p>
+                      </div>
+                  </div>
+                  <!-- modal -->
+                  <div class="modal fade" id="Roger"> 
+                     <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+
+                            <!-- Name -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Roger Goodell</h4>
+                            </div>
+
+                            <!--  details -->
+                            <div class="modal-body">
+                                <p>The National Football League is the most dominant sports league in the United States by far, commanding billions of dollars in revenue. NFL games are routinely the most-watched sporting events in the fall and winter, according to Nielsen TV ratings, capped by the most-viewed event of the year, the Super Bowl. At the head of this colossus is Roger Goodell, who is in his 14th year as NFL commissioner.
+                                Besides negotiating the massive revenue deals for the league, Goodell has had to navigate the shoals of several controversies. Goodell dealt with a public relations flap beginning in 2016 regarding players refusing to stand for the national anthem in protest of unfair treatment of African Americans by police. There are also ongoing concerns about the danger the game poses to players and what this could mean for the future of the sport.</p>
+                            </div>
+
+                            <!-- close buttom -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+
+                          </div>
+                        </div>
+                  </div>
+              </div>
           </div>
       </div>
+      <!-- footer -->
+  <footer class="jumbotorn-fluid bg-danger">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-md-4">
+                  <h3>Location</h3>
+                  <p class="text-white">Cairo,Egypt</p>
+              </div>
+              <div class="col-md-4">
+                  <h3>How To Find Us</h3>
+                  <a class="text-white" href="https://www.linkedin.com"><i class="fab fa-linkedin-in p-2 icons"></i></a>
+                  <a class="text-white" href="https://www.twitter.com"><i class="fab fa-twitter p-2 icons"></i></a>
+                  <a class="text-white" href="https://www.google-plus.com"><i class="fab fa-google-plus-g p-2 icons"></i></a>
+                  <a class="text-white" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              </div>
+              <div class="col-md-4">
+                  <h3>US</h3>
+                  <p class="text-white">We help people to find amazing character</p>
+              </div>
+          </div>
+      </div>
+  </footer>
   </body>
 </html>
