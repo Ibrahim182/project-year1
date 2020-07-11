@@ -1,8 +1,4 @@
-*
-{
-    overflow:hidden;
-}
-/* About Navbar*/
+/* Navbar*/
 .navbar
 {
     background-color:black;
@@ -46,7 +42,7 @@ li a:hover
 /* Home */
 .cover
 {
-  background-image:url("/image/Home.jpg");
+  background-image:url("../image/Home.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   margin-bottom:0;
@@ -68,12 +64,14 @@ li a:hover
 .about1
 {
     width:35%;
-    background-image:url("/image/about1.jpg");
+    background-image:url("../image/about1.jpg");
+    border-radius:12px;
     
 }
 .about2
 {
-    background-image:url("/image/about2.gif");
+    background-image:url("../image/about2.gif");
+    border-radius:12px;
 }
 .search-icon
 {
@@ -83,4 +81,14 @@ li a:hover
 .Character
 {
     background-color:darkred;
+}
+/* influ */
+.details
+{
+    width:90%;
+}
+/* footer */
+.icons
+{
+    border-style:hidden;
 }
