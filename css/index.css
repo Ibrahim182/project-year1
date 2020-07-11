@@ -27,12 +27,12 @@ body
 {
   background-color:#cfe2fc;
 }
+a:hover
+{
+  color:#cfe2fc;
+}
 a:link
 {
   color:black;
   text-decoration:none;
-}
-a:hover
-{
-  color:#cfe2fc;
 }
