@@ -39,19 +39,75 @@
                           </a>
                           <div class="dropdown-menu">
                               <a class="dropdown-item" href="index.html">Log out</a>
-                              <a class="dropdown-item" href="#">Feedback</a>
-                          </div>
+                              <button class="dropdown-item" data-toggle="modal" data-target="#feed">Feedback</button>
+                          </div>   
                       </div>
                   </ul>
               </div>
           </nav>
+          <!-- modal for feedback -->
+          <div class="modal" id="feed"> 
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+
+                        <!-- Name -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">FeedBack US</h4>
+                        </div>
+
+                        <!--  details -->
+                        <div class="modal-body">
+                            <div class="container">
+                                <form action="/action_page.php">
+                                <div class="form-group">
+                                    <label>Are you found our website easy to use ?</label>
+                                    <select class="form-control">
+                                        <option>Yea</option>
+                                        <option>No</option>
+                                        <option>Not easy</option>
+                                    </select>
+                                    <label>Are you found your person here ?</label>
+                                    <select class="form-control">
+                                        <option>Yea</option>
+                                        <option>No</option>
+                                        <option>Yes, but there's little information</option>
+                                    </select>
+                                    <label>If you able to help us are you will do that ?</label>
+                                    <select class="form-control">
+                                        <option>Yea</option>
+                                        <option>No</option>
+                                        <option>I'm not sure</option>
+                                    </select>
+                                    <br>
+                                    <input type="text" class="form-control" placeholder="Are you have any comment ?" name="text1">   
+                                    </div>
+                                  </form>
+                                </div>
+                            </div>
+
+                            <!-- submit buttom -->
+                     <div class="modal-footer">
+                         <button type="button" class="btn btn-danger" data-dismiss="modal">submit</button>
+                     </div>
+
+                  </div>
+              </div>
+          </div>
       </div>
       <!-- Home -->
       <div class="jumbotron jumbotron-fluid text-center text-white cover" id="home">
           <h1 class="pt-5">Welcome To Our Website</h1>
           <h3 class="pt-5">Here We Will Show You The Most Famous Character</h3>
           <h3 class="pt-3">In The World</h3>
-          <button class="btn mr-5 mt-5 butn">Get Start :) </button>
+          <form class="pt-5">
+            <div class="input-group search">
+                <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="search" class="form-control" placeholder="search" name="search">
+            </div>
+          </form>
+          <button class="btn mr-5 mt-5 butn"><a class="start" href="#Character">Get Start :) </a></button>
           <button class="btn ml-5 mt-5 butn">Learn More !</button>
       </div>
       <!-- About -->
