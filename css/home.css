@@ -55,6 +55,20 @@ li a:hover
 {
     background-color:#b91427;
 }
+.start:hover
+{
+    text-decoration-line:none;
+    color:white;
+}
+.start
+{
+    color:black;
+}
+.search
+{
+    width:50%;
+    margin:auto;
+}
 /* About */
 .About
 {
